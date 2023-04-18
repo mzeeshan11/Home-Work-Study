@@ -5,6 +5,7 @@
 }
 
 *{
+    font-family: 'Roboto';
     padding: 0;
     margin: 0;
 }
@@ -30,7 +31,7 @@
 }
 
 .text-18{
-    font-size: 18pxpx;
+    font-size: 18px;
 }
 
 .text-20{
@@ -58,6 +59,9 @@
 
 .text-32{
     font-size: 32px;
+}
+.text-36{
+    font-size: 36px;
 }
 
 
@@ -110,12 +114,15 @@ background: white;
 .button-radius{
     border-radius: 10px;
 }
-
+ 
+.small-card-radius{
+    border-radius: 2px;
+}
 .container-radius{
     border-radius: 15px;
 }
 .card-radius{
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 /* BAKGROUND_COLOR  */
@@ -161,6 +168,9 @@ hr{
     
 }
 
+.bold{
+    font-weight: bold;
+}
 
 .input-style{
     height: 40px;
@@ -181,5 +191,15 @@ hr{
     height: 500px;
   }
 
+  .user-profile img{
+    width: 80px;
+    height: 80px;
+  }
 
 
+.swiper-button-prev-1{
+    margin-left: 40px;
+}
+.swiper-button-next-1{
+    margin-right: 40px;
+}

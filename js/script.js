@@ -12,8 +12,8 @@ const swiper = new Swiper('.swiper', {
   
     // Navigation arrows
     navigation: {
-      nextEl: '#banner2 .swiper-button-next',
-      prevEl: '#banner1 .swiper-button-prev',
+      nextEl: ' .swiper-button-next ',
+      prevEl: ' .swiper-button-prev',
     },
   
     // And if we need scrollbar
