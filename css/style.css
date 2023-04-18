@@ -9,18 +9,20 @@
     margin: 0;
 }
 
-
+.text-8{
+    font-size: 8px;
+}
 
 .text-10{
-    font-size: 10;
+    font-size: 10px;
 }
 
 .text-12{
-    font-size: 12;
+    font-size: 12px;
 }
 
 .text-14{
-    font-size: 14;
+    font-size: 14px;
 }
 
 .text-16{
@@ -28,34 +30,34 @@
 }
 
 .text-18{
-    font-size: 18px;
+    font-size: 18pxpx;
 }
 
-.text-10{
-    font-size: 20;
+.text-20{
+    font-size: 20px;
 }
 
-.text-10{
-    font-size: 22;
+.text-22{
+    font-size: 22px;
 }
 
-.text-10{
-    font-size: 24;
+.text-24{
+    font-size: 24px;
 }
-.text-10{
-    font-size: 26;
-}
-
-.text-{
-    font-size: 28;
+.text-26{
+    font-size: 26px;
 }
 
-.text-10{
-    font-size: 30;
+.text-28{
+    font-size: 28px;
 }
 
-.text-10{
-    font-size: 32;
+.text-30{
+    font-size: 30px;
+}
+
+.text-32{
+    font-size: 32px;
 }
 
 
@@ -64,23 +66,23 @@
 
 
 .heading-5 {
-    font-size: 28;
+    font-size: 28px;
 }
 
 .heading-4 {
-    font-size: 32;
+    font-size: 32px;
 }
 
 .heading-3 {
-    font-size: 36;
+    font-size: 36px;
 }
 
 .heading-2 {
-    color: var(--seccondary-color);
+    font-size: 38px;
 }
 
 .heading-1 {
-    font-size: 40;
+    font-size: 40px;
 }
 
 /* BUTTON STYLE  */
@@ -118,11 +120,14 @@ background: white;
 
 /* BAKGROUND_COLOR  */
 
-.background-clr{
+.background-clr-primary{
     background-color: var(--primary-color);
 }
 .background-clr-secondary{
     background-color: var(--secondary-color);
+}
+.background-clr-tertiary{
+    background-color: var(--tertiary-color);
 }
 
 .text-color-primary{
@@ -156,7 +161,17 @@ hr{
     
 }
 
+
+.input-style{
+    height: 40px;
+    border: none;
+    padding-left: 15px;
+    border-radius: 10px;
+}
        
 
 
-
+.footer-hr{
+    width: 100%;
+    border: 1px solid var(--tertiary-color);
+}
