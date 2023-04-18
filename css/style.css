@@ -1,0 +1,162 @@
+:root {
+    --primary-color:#2557C7;
+    --secondary-color:#3DA3F2;
+    --tertiary-color:#FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.text-10{
+    font-size: 10;
+}
+
+.text-12{
+    font-size: 12;
+}
+
+.text-14{
+    font-size: 14;
+}
+
+.text-16{
+    font-size: 16px;
+}
+
+.text-18{
+    font-size: 18px;
+}
+
+.text-10{
+    font-size: 20;
+}
+
+.text-10{
+    font-size: 22;
+}
+
+.text-10{
+    font-size: 24;
+}
+.text-10{
+    font-size: 26;
+}
+
+.text-{
+    font-size: 28;
+}
+
+.text-10{
+    font-size: 30;
+}
+
+.text-10{
+    font-size: 32;
+}
+
+
+/* HEADING STYLE  */
+
+
+
+.heading-5 {
+    font-size: 28;
+}
+
+.heading-4 {
+    font-size: 32;
+}
+
+.heading-3 {
+    font-size: 36;
+}
+
+.heading-2 {
+    color: var(--seccondary-color);
+}
+
+.heading-1 {
+    font-size: 40;
+}
+
+/* BUTTON STYLE  */
+
+
+.button-primary{
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+} 
+
+.button-secondary {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+}
+
+.button-tertiary{
+border: none;
+background: white;
+
+
+}
+
+.button-radius{
+    border-radius: 10px;
+}
+
+.container-radius{
+    border-radius: 15px;
+}
+.card-radius{
+    border-radius: 10px;
+}
+
+/* BAKGROUND_COLOR  */
+
+.background-clr{
+    background-color: var(--primary-color);
+}
+.background-clr-secondary{
+    background-color: var(--secondary-color);
+}
+
+.text-color-primary{
+    color: var(--primary-color);
+}
+.text-color-secondary{
+    color: #3DA3F2;
+}
+.text-color-tertiary{
+    color: var(--tertiary-color);
+}
+
+.box-shadow{
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card{
+/* border: 1px solid green; */
+}
+.user-profile img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+hr{
+    align-self: center !important;  
+    width: 100%;
+    border: 1px solid  #2557C7;
+    
+}
+
+       
+
+
+
