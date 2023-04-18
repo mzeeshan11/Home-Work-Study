@@ -175,3 +175,11 @@ hr{
     width: 100%;
     border: 1px solid var(--tertiary-color);
 }
+
+.swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+
+
