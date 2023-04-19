@@ -1,5 +1,5 @@
 :root {
-    --primary-color:#2557C7;
+    --primary-color:#3071D5;
     --secondary-color:#3DA3F2;
     --tertiary-color:#FFFFFF;
 }
@@ -64,6 +64,11 @@
     font-size: 36px;
 }
 
+
+.text-light-black{
+    color: rgba(0, 0, 0, 0.7);
+    
+}
 
 /* HEADING STYLE  */
 
@@ -145,6 +150,16 @@ background: white;
 }
 .text-color-tertiary{
     color: var(--tertiary-color);
+}
+
+.font-weight-small {
+    font-weight: 300;
+}
+.font-weight-medium {
+    font-weight: 600;
+}
+.font-weight-large {
+    font-weight: 700;
 }
 
 .box-shadow{
