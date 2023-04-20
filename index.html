@@ -60,49 +60,75 @@
                   Phd
                   dissertation
                 </p>
-                <div class="px-5 py-2 d-flex flex-column align-items-center w-100 ">
+                <div class=" w-75 py-2 d-flex flex-column align-items-center  ">
 
-                  <div class="container ">
+                  <div class="container  ">
                     <div class="row ">
-                      <div class="col-md-4">
-                        <label class="pb-2 text-18" for="title">Title</label> <br>
-                        <input class="input-style box-shadow " type="text" name="" id="title" placeholder="Title" />
+                      <div class="col-md-6 d-flex justify-content-center">
+                        <div>
+                          <label class="pb-2 text-18" for="title">Title</label> <br>
+                          <input class="input-style box-shadow " type="text" name="" id="title" placeholder="Title" />
+
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <label class="pb-2 text-18" for="type">Type</label> <br>
-                        <input class="input-style box-shadow " type="text" name="" id="type" placeholder="Type" />
+                      <div class="col-md-6 d-flex justify-content-center">
+                        <div>
+                          <label class="pb-2 text-18" for="type">Type</label> <br>
+                          <input class="input-style box-shadow " type="text" name="" id="type" placeholder="Type" />
+                        </div>
                       </div>
-                      <div class="col-md-4">
-                        <label class="pb-2 text-18" for="deadline">Deadline</label> <br>
-                        <input class="input-style box-shadow " type="text" name="" id="deadline"
-                          placeholder="20 july 2021" />
-                      </div>
+
                     </div>
                   </div>
 
-                  <div class="container my-3">
+                  <div class="container mt-3  ">
+                    <div class="row ">
+                      <div class="col-md-6 d-flex justify-content-center">
+                        <div>
+                          <label class="pb-2 text-18" for="deadline">Deadline</label> <br>
+                          <input class="input-style box-shadow " type="text" name="" id="deadline"
+                            placeholder="20 july 2021" />
+
+                        </div>
+                      </div>
+                      <div class="col-md-6 d-flex justify-content-center">
+                        <div>
+                          <label class="pb-2 text-18" for="email">Email</label> <br>
+                          <input class="input-style box-shadow " type="email" name="" id="email"
+                            placeholder="@gmail.com" />
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="container my-3 ">
                     <div class="row">
-                      <div class="col-md-5">
-                        <label class="pb-2 text-18" for="text-desc">Breif description</label> <br>
-                        <input class=" input-style box-shadow pb-4 h-75 w-100" type="text" name="" id="text-desc"
-                          placeholder="tell us about something"></input>
+                      <div class="col-md-6 d-flex justify-content-center">
+                        <div>
+                          <label class="pb-2 text-18" for="text-desc">Breif description</label> <br>
+                          <input class=" input-style box-shadow pb-5 h-75 " type="text" name="" id="text-desc"
+                            placeholder="tell us about something"></input>
+                        </div>
                       </div>
-                      <div class="col-md-5">
-                        <label class="pb-2 text-18" for="upload-flie">Upload file</label> <br>
-                        <input class="input-style box-shadow pb-4 h-75 w-100" type="text" id="upload-flie"
-                          placeholder="Upload here" />
+                      <div class="col-md-6    d-flex justify-content-center flex-column align-items-start ">
+
+                        <label class=" text-18 ps-5 " for="upload-flie">Upload file</label>
+                        <br>
+                        <div class=" d-flex justify-content-center flex-column align-items-center">
+
+                          <input class=" w-75  ps-3" type="file" id="upload-flie" placeholder="Upload here" />
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="container my-3">
                     <div class="row ">
-                      <div class="col-md-5">
-                        <label class="pb-2 text-18" for="email">Email</label> <br>
-                        <input class="input-style box-shadow " type="email" name="" id="email"
-                          placeholder="@gmail.com" />
+                      <div class="col-md-6">
                       </div>
-                      <div class="col-md-5 d-flex align-items-end">
+                      <div class="col-md-6 d-flex justify-content-end ">
                         <button class="button-primary  button-radius box-shadow px-4 py-2">Write my paper</button>
                       </div>
 
@@ -1123,9 +1149,11 @@
       </div>
       <div class="  mt-2 mb-3 d-flex  justify-content-center">
         <div class="w-75 d-flex justify-content-evenly flex-wrap text-14">
-          <button class=" button-secondary  button-radius box-shadow text-start px-3  py-3   w-50"> PERSONAL SELF CARE
-            PLAN</button>
-          <button class="button-secondary  button-radius box-shadow px-3 py-3  ">CHOOSE DEADLINE </button>
+          <input class="border border-2 border-dark   button-radius text-start px-3  py-3 w-50 text-dark " type="text"
+            name="" id="self-care" placeholder="PERSONAL SELF CARE PALN">
+          <input class=" button-radius   px-3 py-3 border border-2 border-dark  " type="date" name="" id=""
+            placeholder="CHOOSE DEADLINE ">
+
           <button class="button-secondary  button-radius box-shadow px-4 py-3 ">FIND EXPERTS</button>
         </div>
       </div>
