@@ -188,10 +188,13 @@ hr{
 }
 
 .input-style{
-    height: 40px;
-    border: none;
-    padding-left: 15px;
-    border-radius: 10px;
+    height: 50px;
+    border-radius: 15px !important;
+    border: none !important;
+}
+.textarea-style{
+    border-radius: 15px !important;
+    border: none !important;
 }
        
 
