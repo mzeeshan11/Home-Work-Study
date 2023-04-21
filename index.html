@@ -80,20 +80,30 @@
                         <input type="date" class="form-control input-style box-shadow">
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-3">
                       <div class="form-group col-md-6">
                         <label for="exampleFormControlTextarea1">Brief Description</label>
                         <textarea class="form-control textarea-style box-shadow" id="exampleFormControlTextarea1"
                           rows="2"></textarea>
                       </div>
                       <div class="form-group col-md-6">
-                        <label for="exampleFormControlTextarea2">Upload File</label>
-                        <textarea class="form-control textarea-style box-shadow" id="exampleFormControlTextarea1"
-                          rows="2"></textarea>
+                        <label>Upload File</label>
+                        <input type="file" class="form-control input-style box-shadow">
                       </div>
                     </div>
-                    <div class="d-flex justify-content-end pt-4">
-                      <button class="button-primary  button-radius box-shadow px-4 py-2">Write my paper</button>
+                    <div class="row mb-3">
+                      <div class="form-group col-md-6">
+                        <label>File Type</label>
+                        <input type="text" class="form-control input-style box-shadow">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>Budget</label>
+                        <input type="number" class="form-control input-style box-shadow">
+                      </div>
+                    </div>
+                    <div class="w-100 pt-4">
+                      <button class="button-primary w-100 button-radius box-shadow px-4 py-3">Write my
+                        paper</button>
                     </div>
                   </form>
                 </div>
@@ -124,7 +134,7 @@
     </div>
     <!-- SWIPER DIV START  -->
 
-    <div class="swiper">
+    <div class="swiper myWriterSwiper">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
@@ -818,9 +828,10 @@
     <!-- SWIPER DIV  -->
 
     <div>
-      <div class="swiper">
+      <div class="swiper mySwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
+          <div class="swiper-pagination"></div>
           <!-- Slides -->
           <div class="swiper-slide">
             <div class="container assignment-help-services">

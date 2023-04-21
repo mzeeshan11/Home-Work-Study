@@ -192,6 +192,19 @@ hr{
     border-radius: 15px !important;
     border: none !important;
 }
+input[type=file]::file-selector-button {
+    border: 2px solid var(--primary-color);
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: 1s;
+    height: 50px;
+}
+input[type=file]::file-selector-button:hover {
+    background-color: #81ecec !important;
+    border: 2px solid #000 !important;
+}
 .textarea-style{
     border-radius: 15px !important;
     border: none !important;
