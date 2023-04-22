@@ -11,17 +11,23 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-
+ 
 </head>
 
 <body>
-
-
-
+  
+  
   <!-- 1st SECTION  -->
-  <div class="pb-5">
-    <div class="  background-clr-primary pb-5 divone position-relative">
+  <div class="pb-5 ">
+    <div class="  background-clr-primary pb-5 divone position-relative ">
       <nav class="navbar ">
         <div class="container-fluid ">
 
@@ -80,30 +86,20 @@
                         <input type="date" class="form-control input-style box-shadow">
                       </div>
                     </div>
-                    <div class="row mb-3">
+                    <div class="row">
                       <div class="form-group col-md-6">
                         <label for="exampleFormControlTextarea1">Brief Description</label>
                         <textarea class="form-control textarea-style box-shadow" id="exampleFormControlTextarea1"
                           rows="2"></textarea>
                       </div>
                       <div class="form-group col-md-6">
-                        <label>Upload File</label>
-                        <input type="file" class="form-control input-style box-shadow">
+                        <label for="exampleFormControlTextarea2">Upload File</label>
+                        <textarea class="form-control textarea-style box-shadow" id="exampleFormControlTextarea1"
+                          rows="2"></textarea>
                       </div>
                     </div>
-                    <div class="row mb-3">
-                      <div class="form-group col-md-6">
-                        <label>File Type</label>
-                        <input type="text" class="form-control input-style box-shadow">
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label>Budget</label>
-                        <input type="number" class="form-control input-style box-shadow">
-                      </div>
-                    </div>
-                    <div class="w-100 pt-4">
-                      <button class="button-primary w-100 button-radius box-shadow px-4 py-3">Write my
-                        paper</button>
+                    <div class="d-flex justify-content-end pt-4">
+                      <button class="button-primary  button-radius box-shadow px-4 py-2">Write my paper</button>
                     </div>
                   </form>
                 </div>
@@ -134,7 +130,7 @@
     </div>
     <!-- SWIPER DIV START  -->
 
-    <div class="swiper myWriterSwiper">
+    <div class="swiper">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide">
@@ -574,10 +570,8 @@
           </svg>
         </div>
       </div>
-
     </div>
-
-  </div>
+    </div>
 
   <!-- 3rd Section  -->
 
@@ -694,9 +688,7 @@
 
     <div class="paper-writing-service d-flex flex-column align-items-center  ">
       <h1 class="text-color-secondary text-center">How our paper writing service <br> works</h1>
-
-
-      <ul class="nav nav-pills mb-3 mt-5 nav-justified text-18 text-light-black" id="pills-tab" role="tablist">
+      <!-- <ul class="nav nav-pills mb-3 mt-5 nav-justified text-18 text-light-black" id="pills-tab" role="tablist">
         <li class="nav-item mx-1" role="presentation">
           <a class="nav-link active font-small" id="pills-All-tab" data-bs-toggle="tab" data-bs-target="#pills-all"
             type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Step1</a>
@@ -716,7 +708,6 @@
 
           
       </ul>
-
       <br>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
@@ -813,138 +804,268 @@
             </div>
           </div>
         </div>
-      </div>
-
+      </div> -->
     </div>
+ <!-- OWL STEPS CAROUSEL  START-->
+ <div>
+  <div class="owl-dots w-100 text-center py-5 text-18 text-light-black border-0">
+    <button role="button" class="owl-dot active px-3 py-2 mx-5  border-0"><span>Step1</span></button>
+    <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step2</span></button>
+    <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step3</span></button>
+    <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step4</span></button>
+  </div>
+  <div id="owl-carousel" class="owl-carousel owl-theme">
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-2 d-flex justify-content-end align-items-center pb-5">
+
+            <img src="./assets/images/Homeworkstudy-imgs/132830_1333019.jpg 1.png" alt="">
+            <div>
+              <div class="px-4">
+                <h4>Recieve a paper</h4>
+
+                <p class=" w-75 text-color-secondary py-4 text-18  ">Get your paper written in terms
+                  according to your
+                  order. Note that you will pay for essay writing only after you are delighted with the result.Give
+                  us
+                  your feedback about the cooperation</p>
+                <button class="button-primary button-radius box-shadow px-4 py-2">Pay for easy</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-2 d-flex justify-content-end align-items-center pb-5">
+
+            <img src="./assets/images/Homeworkstudy-imgs/132830_1333019.jpg 1.png" alt="">
+            <div>
+              <div class="px-4">
+                <h4>Recieve a paper</h4>
+
+                <p class=" w-75 text-color-secondary py-4 text-18  ">Get your paper written in terms
+                  according to your
+                  order. Note that you will pay for essay writing only after you are delighted with the result.Give
+                  us
+                  your feedback about the cooperation</p>
+                <button class="button-primary button-radius box-shadow px-4 py-2">Pay for easy</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-2 d-flex justify-content-end align-items-center pb-5">
+
+            <img src="./assets/images/Homeworkstudy-imgs/132830_1333019.jpg 1.png" alt="">
+            <div>
+              <div class="px-4">
+                <h4>Recieve a paper</h4>
+
+                <p class=" w-75 text-color-secondary py-4 text-18  ">Get your paper written in terms
+                  according to your
+                  order. Note that you will pay for essay writing only after you are delighted with the result.Give
+                  us
+                  your feedback about the cooperation</p>
+                <button class="button-primary button-radius box-shadow px-4 py-2">Pay for easy</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 offset-md-2 d-flex justify-content-end align-items-center pb-5">
+
+            <img src="./assets/images/Homeworkstudy-imgs/132830_1333019.jpg 1.png" alt="">
+            <div>
+              <div class="px-4">
+                <h4>Recieve a paper</h4>
+
+                <p class=" w-75 text-color-secondary py-4 text-18  ">Get your paper written in terms
+                  according to your
+                  order. Note that you will pay for essay writing only after you are delighted with the result.Give
+                  us
+                  your feedback about the cooperation</p>
+                <button class="button-primary button-radius box-shadow px-4 py-2">Pay for easy</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+   
+  </div>
+</div>
+<!-- OWL STEPS CAROUSEL END  -->
   </div>
 
   <!-- 4th Section  -->
 
   <div class=" container  pb-5">
-
     <h1 class="text-center text-color-secondary pb-3">How homework study Stands Out <br> From Assignment Help Services?
     </h1>
-
     <!-- SWIPER DIV  -->
-
     <div>
-      <div class="swiper mySwiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <div class="swiper-pagination"></div>
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="container assignment-help-services">
-              <div class="row">
-                <div class="col-md-6 p-5">
-                  <div class="text-center p-5 box-shadow">
-                    <h3>Huge Community of Experts</h3>
-                    <p class=" pt-5 px-5">We bring together verified college professors, practicing scientists,
-                      independent
-                      researchers, freelance journalists, essay writers, and thousands of other experts in different
-                      fields of
-                      study, not only from the USA, but from all over the world. They are ready to share their
-                      knowledge and
-                      provide you with professional assignment help.</p>
-                  </div>
-                </div>
-                <div class="col-md-6 p-5">
-                  <div class="text-center p-5 box-shadow">
-                    <h3>Affordable Prices</h3>
-                    <p class=" pt-5 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
-                      tools to
-                      cover various parts of the process of each project. For example, we automate and optimize
-                      plagiarism
-                      checking and grammar checking, which lets us provide students with cheap homework assignment
-                      help of
-                      outstanding quality.</p>
-                  </div>
-                </div>
+      <!-- PREV & NEXT BTN  -->
+      <div class=" slider_nav d-flex justify-content-between flex-column  background-clr-primary">
+        <button class="am-prev am-prev1 bg-transparent  text-color-secondary"> 
+         
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+        class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+        <path
+          d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+      </svg>
+      </button>
+        <button class="am-next am-next1   bg-transparent  text-color-secondary d-block bg-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+          class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+          <path
+            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+        </svg>
+        </button>
+      </div>
+      <div class="owl-carousel-services ">
+        
+        <div class="item ">
+          <div class="container assignment-help-services">
+          <div class="row">
+            <div class="col-md-6 p-5">
+              <div class="text-center p-5 box-shadow">
+                <h3>Huge Community of Experts</h3>
+                <p class=" pt-5 px-5">We bring together verified college professors, practicing scientists,
+                  independent
+                  researchers, freelance journalists, essay writers, and thousands of other experts in different
+                  fields of
+                  study, not only from the USA, but from all over the world. They are ready to share their
+                  knowledge and
+                  provide you with professional assignment help.</p>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container assignment-help-services">
-              <div class="row">
-                <div class="col-md-6 p-5">
-                  <div class="text-center p-5 box-shadow">
-                    <h3 class="pb-4">Huge Community of Experts</h3>
-                    <p class=" py-2 px-5">We bring together verified college professors, practicing scientists,
-                      independent
-                      researchers, freelance journalists, essay writers, and thousands of other experts in different
-                      fields of
-                      study, not only from the USA, but from all over the world. They are ready to share their
-                      knowledge and
-                      provide you with professional assignment help.</p>
-                  </div>
-                </div>
-                <div class="col-md-6 p-5">
-                  <div class="text-center p-5 box-shadow">
-                    <h3 class="pb-4">Affordable Prices</h3>
-                    <p class=" py-2 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
-                      tools to
-                      cover various parts of the process of each project. For example, we automate and optimize
-                      plagiarism
-                      checking and grammar checking, which lets us provide students with cheap homework assignment
-                      help of
-                      outstanding quality.</p>
-                  </div>
-                </div>
+            <div class="col-md-6 p-5">
+              <div class="text-center p-5 box-shadow">
+                <h3>Affordable Prices</h3>
+                <p class=" pt-5 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
+                  tools to
+                  cover various parts of the process of each project. For example, we automate and optimize
+                  plagiarism
+                  checking and grammar checking, which lets us provide students with cheap homework assignment
+                  help of
+                  outstanding quality.</p>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="container assignment-help-services">
-              <div class="row">
-                <div class="col-md-6 p-5">
-                  <div class="text-center p-5 box-shadow">
-                    <h3 class="pb-4">Huge Community of Experts</h3>
-                    <p class=" py-2 px-5">We bring together verified college professors, practicing scientists,
-                      independent
-                      researchers, freelance journalists, essay writers, and thousands of other experts in different
-                      fields of
-                      study, not only from the USA, but from all over the world. They are ready to share their
-                      knowledge and
-                      provide you with professional assignment help.</p>
-                  </div>
-                </div>
-                <div class="col-md-6 p-5">
-                  <div class="text-center p-5 box-shadow">
-                    <h3 class="pb-4">Affordable Prices</h3>
-                    <p class=" py-2 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
-                      tools to
-                      cover various parts of the process of each project. For example, we automate and optimize
-                      plagiarism
-                      checking and grammar checking, which lets us provide students with cheap homework assignment
-                      help of
-                      outstanding quality.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-button-prev">
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-              class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-              <path
-                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-button-next ">
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
-              class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-              <path
-                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-            </svg>
-
           </div>
         </div>
       </div>
+        <div class="item">
+          <div class="container assignment-help-services">
+            <div class="row">
+              <div class="col-md-6 p-5">
+                <div class="text-center p-5 box-shadow">
+                  <h3 class="pb-4">Huge Community of Experts</h3>
+                  <p class=" py-2 px-5">We bring together verified college professors, practicing scientists,
+                    independent
+                    researchers, freelance journalists, essay writers, and thousands of other experts in different
+                    fields of
+                    study, not only from the USA, but from all over the world. They are ready to share their
+                    knowledge and
+                    provide you with professional assignment help.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-5">
+                <div class="text-center p-5 box-shadow">
+                  <h3 class="pb-4">Affordable Prices</h3>
+                  <p class=" py-2 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
+                    tools to
+                    cover various parts of the process of each project. For example, we automate and optimize
+                    plagiarism
+                    checking and grammar checking, which lets us provide students with cheap homework assignment
+                    help of
+                    outstanding quality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container assignment-help-services">
+            <div class="row">
+              <div class="col-md-6 p-5">
+                <div class="text-center p-5 box-shadow">
+                  <h3 class="pb-4">Huge Community of Experts</h3>
+                  <p class=" py-2 px-5">We bring together verified college professors, practicing scientists,
+                    independent
+                    researchers, freelance journalists, essay writers, and thousands of other experts in different
+                    fields of
+                    study, not only from the USA, but from all over the world. They are ready to share their
+                    knowledge and
+                    provide you with professional assignment help.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-5">
+                <div class="text-center p-5 box-shadow">
+                  <h3 class="pb-4">Affordable Prices</h3>
+                  <p class=" py-2 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
+                    tools to
+                    cover various parts of the process of each project. For example, we automate and optimize
+                    plagiarism
+                    checking and grammar checking, which lets us provide students with cheap homework assignment
+                    help of
+                    outstanding quality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container assignment-help-services">
+            <div class="row">
+              <div class="col-md-6 p-5">
+                <div class="text-center p-5 box-shadow">
+                  <h3 class="pb-4">Huge Community of Experts</h3>
+                  <p class=" py-2 px-5">We bring together verified college professors, practicing scientists,
+                    independent
+                    researchers, freelance journalists, essay writers, and thousands of other experts in different
+                    fields of
+                    study, not only from the USA, but from all over the world. They are ready to share their
+                    knowledge and
+                    provide you with professional assignment help.</p>
+                </div>
+              </div>
+              <div class="col-md-6 p-5">
+                <div class="text-center p-5 box-shadow">
+                  <h3 class="pb-4">Affordable Prices</h3>
+                  <p class=" py-2 px-5">As a strong team of developers, we use high-tech solutions such as AI-based
+                    tools to
+                    cover various parts of the process of each project. For example, we automate and optimize
+                    plagiarism
+                    checking and grammar checking, which lets us provide students with cheap homework assignment
+                    help of
+                    outstanding quality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
     </div>
   </div>
   <!-- SWIPER DIV END  -->
@@ -1321,6 +1442,57 @@
         width="200" height="200" alt="">
     </div>
   </footer>
+ 
+  <script>
+ $('.owl-carousel-services').owlCarousel({
+  loop:true,
+    items:1,
+    margin:10,
+    dosts:false,
+    dotsData:true,
+    rewindNav:false,
+    navigation: true,
+    navigationText: [$('.am-prev'),$('.am-next')],
+    responsive:{
+        0:{
+            items:1,
+            loop: true,
+          
+        },
+        600:{
+            items:1,
+            loop: true,
+          
+        },
+        1000:{
+            items:1,
+            loop: true, 
+           
+        }
+    }
+});
+
+$('#owl-carousel').owlCarousel({
+  loop: false,
+  items: 1,
+  margin: 10,
+  nav: false,
+  dots: false,
+  dotsData:true,
+  dotsContainer: '.owl-dots',
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  }
+})
+  </script>
 
   <script src="./bootstrap/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
