@@ -808,7 +808,7 @@
     </div>
  <!-- OWL STEPS CAROUSEL  START-->
  <div>
-  <div class="owl-dots w-100 text-center py-5 text-18 text-light-black border-0">
+  <div id="customDots" class=" w-100 text-center py-5 text-18 text-light-black border-0">
     <button role="button" class="owl-dot active px-3 py-2 mx-5  border-0"><span>Step1</span></button>
     <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step2</span></button>
     <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step3</span></button>
@@ -1442,58 +1442,36 @@
         width="200" height="200" alt="">
     </div>
   </footer>
- 
+  
   <script>
  $('.owl-carousel-services').owlCarousel({
   loop:true,
     items:1,
     margin:10,
+    autoplay:true,
     dosts:false,
     dotsData:true,
     rewindNav:false,
     navigation: true,
     navigationText: [$('.am-prev'),$('.am-next')],
-    responsive:{
-        0:{
-            items:1,
-            loop: true,
-          
-        },
-        600:{
-            items:1,
-            loop: true,
-          
-        },
-        1000:{
-            items:1,
-            loop: true, 
-           
-        }
-    }
+    
 });
 
-$('#owl-carousel').owlCarousel({
+$(document).ready(function(){
+  $('#owl-carousel').owlCarousel({
   loop: false,
   items: 1,
   margin: 10,
+  autoplay:true,
   nav: false,
-  dots: false,
+  dots: true,
+  dotsEach:true,
   dotsData:true,
-  dotsContainer: '.owl-dots',
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  }
-})
+  dotsContainer: '#customDots',
+ 
+});
+});
   </script>
-
   <script src="./bootstrap/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
