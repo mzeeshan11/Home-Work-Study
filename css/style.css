@@ -153,10 +153,10 @@ background: white;
 }
 
 .font-weight-small {
-    font-weight: 300;
+    font-weight: 400;
 }
 .font-weight-medium {
-    font-weight: 600;
+    font-weight: 500;
 }
 .font-weight-large {
     font-weight: 700;
@@ -271,4 +271,15 @@ color: var(--tertiary-color);
     right: -15px;
     display: block !important;
     border: 0;
+}
+
+.owl-dot{
+    color: grey;
+    border-radius: 5px;
+
+}
+.owl-dots  .active
+{
+    background-color: #F3F7FA !important;
+    color: var(--secondary-color) !important;
 }

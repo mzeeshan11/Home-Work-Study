@@ -818,11 +818,11 @@
     </div>
     <!-- OWL STEPS CAROUSEL  START-->
     <div>
-      <div class="owl-dots w-100 text-center py-5 text-18 text-light-black border-0">
-        <button role="button" class="owl-dot active px-3 py-2 mx-5  border-0"><span>Step1</span></button>
-        <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step2</span></button>
-        <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step3</span></button>
-        <button role="button" class="owl-dot px-3 py-2 mx-5  border-0"><span>Step4</span></button>
+      <div id="owl-dots" class="owl-dots w-100 text-center py-5 text-18 text-light-black border-0 ">
+        <button role="button" class="owl-btn owl-dot active  px-3 py-2 mx-3  border-0 bg-transparent font-weight-medium "><span>Step 1</span></button>
+        <button role="button" class="owl-btn owl-dot px-3 py-2 mx-3   border-0 bg-transparent font-weight-medium"><span>Step 2</span></button>
+        <button role="button" class="owl-btn owl-dot px-3 py-2 mx-3    border-0 bg-transparent font-weight-medium"><span>Step 3</span></button>
+        <button role="button" class="owl-btn owl-dot px-3 py-2 mx-3   border-0 bg-transparent  font-weight-medium"><span>Step 4</span></button>
       </div>
       <div id="owl-carousel" class="owl-carousel owl-theme">
         <div class="item">
@@ -937,7 +937,7 @@
     <div>
       <!-- PREV & NEXT BTN  -->
       <div class=" slider_nav d-flex justify-content-between flex-column  background-clr-primary">
-        <button class="am-prev am-prev1 bg-transparent  text-color-secondary">
+        <button class="am-prev am-prev1 bg-transparent  text-dark">
 
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
             class="bi bi-caret-left-fill" viewBox="0 0 16 16">
@@ -945,7 +945,7 @@
               d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
           </svg>
         </button>
-        <button class="am-next am-next1   bg-transparent  text-color-secondary d-block bg-dark">
+        <button class="am-next am-next1   bg-transparent  text-dark d-block bg-dark">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
             class="bi bi-caret-right-fill" viewBox="0 0 16 16">
             <path
@@ -1498,7 +1498,11 @@
 
   <script>
     $('#owl-carousel').owlCarousel({
-      loop: false,
+      loop: true,
+      mouseDrag:false,
+      touchDrag:false,
+      pullDrag:false,
+      freeDrag:false,
       items: 1,
       margin: 10,
       nav: false,
@@ -1516,9 +1520,19 @@
           items: 1
         }
       }
-    })
-  </script>
+    });
 
+    var header = document.getElementById("owl-dots");
+var btns = header.getElementsByClassName("owl-btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+  </script>
   <script src="./bootstrap/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
