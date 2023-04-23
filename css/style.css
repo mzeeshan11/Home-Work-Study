@@ -1,107 +1,182 @@
 :root {
-    --primary-color:#3071D5;
-    --secondary-color:#3DA3F2;
-    --tertiary-color:#FFFFFF;
+    --primary-color: #3071D5;
+    --secondary-color: #3DA3F2;
+    --tertiary-color: #FFFFFF;
 }
 
-*{
+* {
     font-family: 'Roboto';
     padding: 0;
     margin: 0;
 }
 
-.text-8{
-    font-size: 8px;
-}
+/* GENERIC CLASSES */
 
-.text-10{
+/*
+1-FONT SIZE
+2-TEXT TRANSFORM
+3-TEXT COLOR
+4-HEADINGS 
+5-FONT WEIGHT
+6-BUTTONS 
+7-BORDER RADIUS
+8-BAKGROUND COLOR 
+*/
+
+
+/* 1-FONT SIZE */
+
+.text-10 {
     font-size: 10px;
 }
 
-.text-12{
+.text-12 {
     font-size: 12px;
 }
 
-.text-14{
+.text-14 {
     font-size: 14px;
 }
 
-.text-16{
+.text-16 {
     font-size: 16px;
 }
 
-.text-18{
+.text-18 {
     font-size: 18px;
 }
 
-.text-20{
+.text-20 {
     font-size: 20px;
 }
 
-.text-22{
+.text-22 {
     font-size: 22px;
 }
 
-.text-24{
+.text-24 {
     font-size: 24px;
 }
-.text-26{
+
+.text-26 {
     font-size: 26px;
 }
 
-.text-28{
+.text-28 {
     font-size: 28px;
 }
 
-.text-30{
+.text-30 {
     font-size: 30px;
 }
 
-.text-32{
+.text-32 {
     font-size: 32px;
 }
-.text-36{
+
+.text-36 {
     font-size: 36px;
 }
 
+.text-lowercase {
+    text-transform: lowercase;
+}
 
-.text-light-black{
+/* 2-TEXT TRANSFORM */
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+/* 3-TEXT COLOR */
+
+.text-light-black {
     color: rgba(0, 0, 0, 0.7);
-    
 }
 
-/* HEADING STYLE  */
-
-
-
-.heading-5 {
-    font-size: 28px;
+.text-color-primary {
+    color: var(--primary-bg-color) !important;
 }
 
-.heading-4 {
-    font-size: 32px;
+a.text-color-primary:hover,
+a.text-color-primary:focus {
+    color: var(--primary-bg-hover) !important;
 }
 
-.heading-3 {
-    font-size: 36px;
+.text-color-secondary {
+    color: #3DA3F2 !important;
+}
+
+a.text-color-secondary:hover,
+a.text-color-secondary:focus {
+    color: #3DA3F2 !important;
+}
+
+.text-color-tertiary {
+    color: var(--tertiary-color);
+}
+
+a.text-color-tertiary:hover,
+a.text-color-tertiary:focus {
+    color: var(--tertiary-color);
+}
+
+
+/* 4-HEADINGS  */
+
+.heading-1 {
+    font-size: 40px;
 }
 
 .heading-2 {
     font-size: 38px;
 }
 
-.heading-1 {
-    font-size: 40px;
+.heading-3 {
+    font-size: 36px;
 }
 
-/* BUTTON STYLE  */
+.heading-4 {
+    font-size: 32px;
+}
+
+.heading-5 {
+    font-size: 28px;
+}
+
+/* 5-FONT WEIGHT */
+.font-weight-light {
+    font-weight: 400;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-normal {
+    font-weight: 600 !important;
+}
+
+.font-weight-bold {
+    font-weight: bold !important;
+}
+
+.font-weight-bolder {
+    font-weight: bolder;
+}
 
 
-.button-primary{
+/* 6-BUTTONS  */
+
+
+.button-primary {
     background-color: var(--primary-color);
     border: none;
     color: white;
-} 
+}
 
 .button-secondary {
     background-color: var(--secondary-color);
@@ -109,89 +184,74 @@
     color: white;
 }
 
-.button-tertiary{
-border: none;
-background: white;
-
-
+.button-tertiary {
+    border: none;
+    background: white;
 }
 
-.button-radius{
+/* 7-BORDER RADIUS */
+.button-radius {
     border-radius: 10px;
 }
- 
-.small-card-radius{
+
+.small-card-radius {
     border-radius: 2px;
 }
-.container-radius{
+
+.container-radius {
     border-radius: 15px;
 }
-.card-radius{
+
+.card-radius {
     border-radius: 8px;
 }
 
-/* BAKGROUND_COLOR  */
+/* 8-BAKGROUND COLOR  */
 
-.background-clr-primary{
+.bg-primary {
     background-color: var(--primary-color);
 }
-.background-clr-secondary{
+
+.bg-secondary {
     background-color: var(--secondary-color);
 }
-.background-clr-tertiary{
+
+.bg-tertiary {
     background-color: var(--tertiary-color);
 }
 
-.text-color-primary{
-    color: var(--primary-color);
-}
-.text-color-secondary{
-    color: #3DA3F2;
-}
-.text-color-tertiary{
-    color: var(--tertiary-color);
-}
 
-.font-weight-small {
-    font-weight: 400;
-}
-.font-weight-medium {
-    font-weight: 500;
-}
-.font-weight-large {
-    font-weight: 700;
-}
 
-.box-shadow{
+.box-shadow {
     box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
-.profile-card{
-/* border: 1px solid green; */
-}
-.user-profile img{
+
+
+.user-profile img {
     border-radius: 50%;
     height: 70px;
     width: 70px;
     object-fit: cover;
 }
 
-hr{
-    align-self: center !important;  
+hr {
+    align-self: center !important;
     width: 100%;
-    border: 1px solid  #2557C7;
-    
+    border: 1px solid #2557C7;
+
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
-.input-style{
+.input-style {
     height: 50px;
     border-radius: 15px !important;
     border: none !important;
 }
+
 input[type=file]::file-selector-button {
     border: 2px solid var(--primary-color);
     padding: .2em .4em;
@@ -201,18 +261,18 @@ input[type=file]::file-selector-button {
     transition: 1s;
     height: 50px;
 }
+
 input[type=file]::file-selector-button:hover {
-    background-color: var(--secondary-color)!important;
-   border: none;
+    background-color: var(--secondary-color) !important;
+    border: none;
 }
-.textarea-style{
+
+.textarea-style {
     border-radius: 15px !important;
     border: none !important;
 }
-       
 
-
-.footer-hr{
+.footer-hr {
     width: 100%;
     border: 1px solid var(--tertiary-color);
 }
@@ -220,43 +280,45 @@ input[type=file]::file-selector-button:hover {
 .swiper {
     width: 100%;
     height: 500px;
-  }
-
-.user-profile img{
-width: 80px;
-height: 80px;
 }
 
-.swiper-button-next:after,.swiper-button-prev:after{
+.user-profile img {
+    width: 80px;
+    height: 80px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
     display: none;
 }
 
-.placeholder-light::placeholder{
-color: var(--tertiary-color);
+.placeholder-light::placeholder {
+    color: var(--tertiary-color);
 }
 
-.slider_nav{
-    
+.slider_nav {
     position: absolute;
     background-color: green !important;
     display: flex;
     justify-content: center;
-
 }
-.am-next:after, .am-prev:after{
+
+.am-next:after,
+.am-prev:after {
     display: none;
 }
-.am-prev{
-   
+
+.am-prev {
     width: 15px;
     height: 100px;
     position: absolute;
     top: 40%;
     margin-left: -35px;
     display: block !important;
-    border:0px solid black;
+    border: 0px solid black;
 }
-.am-next{
+
+.am-next {
     width: 15px;
     height: 100px;
     position: absolute;
@@ -266,12 +328,12 @@ color: var(--tertiary-color);
     border: 0;
 }
 
-.owl-dot{
+.owl-dot {
     color: grey;
     border-radius: 5px;
 }
-.owl-dots  .active
-{
+
+.owl-dots .active {
     background-color: #F3F7FA !important;
     color: var(--secondary-color) !important;
 }
